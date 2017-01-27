@@ -1,0 +1,38 @@
+{
+	"name":"cgo-it/xls_export",
+	"description":"xls_export extension for the Contao Open Source CMS",
+	"keywords":["contao", "excel"],
+	"type":"contao-module",
+	"license":"GPL",
+	"authors":[
+		{
+			"name":"cgo IT",
+			"email":"info@cgo-it.de",
+			"homepage":"https://cgo-it.de",
+			"role":"Developer"
+		}
+	],
+	"support": {
+		"email": "info@cgo-it.de",
+		"issues": "https://bitbucket.org/cgo-it/contao-xls_export/issues?status=new&status=open",
+		"source": "https://bitbucket.org/cgo-it/contao-xls_export/src"
+	},
+	"require":{
+		"php":">=5.3",
+		"contao/core":">=3.0",
+		"contao-community-alliance/composer-plugin": "~2.0"
+	},
+	"replace": {
+		"cgo-it/xls_export": "self.version"
+	},
+    "conflict": {
+			"contao/core": "2.11.*"
+	},
+	"extra":{
+		"contao": {
+			"sources":{
+				"":"system/modules/xls_export"
+			}
+		}
+	}
+}

@@ -3,7 +3,7 @@
 	"description":"xls_export extension for the Contao Open Source CMS",
 	"keywords":["contao", "excel"],
 	"type":"contao-module",
-	"license":"GPL",
+	"license":"GPL-3.0-or-later",
 	"authors":[
 		{
 			"name":"cgo IT",

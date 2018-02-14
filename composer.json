@@ -1,8 +1,9 @@
 {
-	"name":"cgo-it/xls_export",
-	"description":"xls_export extension for the Contao Open Source CMS",
-	"keywords":["contao", "excel"],
-	"type":"contao-module",
+	"name":"cgo-it/contao-xls_export-bundle",
+	"description":"xls_export extension for the Contao Open Source CMS as contao 4 bundle",
+	"keywords":["contao", "excel", "bundle"],
+	"type":"contao-bundle",
+	"homepage":"https://cgo-it.de",
 	"license":"GPL-3.0-or-later",
 	"authors":[
 		{
@@ -13,23 +14,26 @@
 		}
 	],
 	"support": {
-		"email": "info@cgo-it.de",
-		"issues": "https://bitbucket.org/cgo-it/contao-xls_export/issues?status=new&status=open",
-		"source": "https://bitbucket.org/cgo-it/contao-xls_export/src"
+		"issues": "https://git.cgo-it.de/contao/xls_export/issues",
+		"source": "https://git.cgo-it.de/contao/xls_export.git"
 	},
 	"require":{
-		"php":">=5.3",
-		"contao/core":">=3.0||<5",
-		"contao-community-alliance/composer-plugin": "~2.0"
+		"php":">=7.0",
+		"contao/core-bundle": "^4.4"
 	},
-	"replace": {
-		"cgo-it/xls_export": "3.0.0"
+	"conflict": {
+		"contao/core": "*",
+		"contao/manager-plugin": "<2.0 || >=3.0",
 	},
-	"extra":{
-		"contao": {
-			"sources":{
-				"":"system/modules/xls_export"
-			}
-		}
+	"autoload": {
+		"psr-4": {
+			"cgoIT\\xlsexport\\": "src/"
+		},
+		"classmap": [
+			"src/Resources/contao/"
+		]
+ 	},
+	"extra": {
+		"contao-manager-plugin": "cgoIT\\xlsexport\\ContaoManagerPlugin"
 	}
 }

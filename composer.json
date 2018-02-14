@@ -25,9 +25,6 @@
 	"replace": {
 		"cgo-it/xls_export": "3.0.0"
 	},
-    "conflict": {
-			"contao/core": "<=2.11"
-	},
 	"extra":{
 		"contao": {
 			"sources":{

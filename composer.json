@@ -14,8 +14,8 @@
 		}
 	],
 	"support": {
-		"issues": "https://git.cgo-it.de/contao/xls_export/issues",
-		"source": "https://git.cgo-it.de/contao/xls_export.git"
+		"issues": "https://github.com/cgoIT/contao-xls-export-bundle/issues",
+		"source": "https://github.com/cgoIT/contao-xls-export-bundle.git"
 	},
 	"require":{
 		"php":">=7.0",

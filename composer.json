@@ -5,6 +5,13 @@
 	"type":"contao-bundle",
 	"homepage":"https://cgo-it.de",
 	"license":"GPL-3.0-or-later",
+	"prefer-stable": true,
+	"config": {
+		"preferred-install": {
+			"cgo-it/*": "dist",
+			"*": "dist"
+		}
+	},
 	"authors":[
 		{
 			"name":"cgo IT",
